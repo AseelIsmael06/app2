@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="#FFFFFF"
+    tools:context=".FirstPageFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#CAAFAF"
+        android:foregroundTint="#FFFFFF">
+
+
+        <TextView
+            android:id="@+id/etTextview"
+            android:layout_width="0dp"
+            android:layout_height="52dp"
+            android:layout_marginStart="59dp"
+            android:layout_marginTop="140dp"
+            android:layout_marginEnd="59dp"
+            android:backgroundTint="#FFFFFF"
+            android:drawableTint="#FFFFFF"
+            android:foregroundTint="#FFFFFF"
+            android:text="𝗟𝗢𝗢𝗞  𝗙𝗔𝗡𝗧𝗔𝗦𝗧𝗜𝗖 "
+            android:textColor="#DDFFFFFF"
+            android:textSize="30sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/btnLogIn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="59dp"
+            android:backgroundTint="#CAAFAF"
+            android:hint="LogIn"
+            android:text="LogIn"
+            app:layout_constraintBaseline_toBaselineOf="@+id/btnSignUp"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/btnSignUp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="79dp"
+            android:layout_marginBottom="323dp"
+            android:backgroundTint="#CAAFAF"
+            android:hint="SignUp"
+            android:text="SignUp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

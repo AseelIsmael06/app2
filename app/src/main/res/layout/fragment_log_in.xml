@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#CAAFAF"
+    tools:context=".LogInFragment">
+
+    <TextView
+        android:id="@+id/etTextView1"
+        android:layout_width="166dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="56dp"
+        android:background="#CAAFAF"
+        android:hint="𝐋𝐎𝐆 𝐈𝐍 𝐏𝐀𝐆𝐄 "
+        android:textColor="#DCFFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/etEmailLogIn"
+        android:layout_width="215dp"
+        android:layout_height="79dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="63dp"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:text="Email"
+        android:textColor="#DCFFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/etPassLogIn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etTextView1" />
+
+    <EditText
+        android:id="@+id/etPassLogIn"
+        android:layout_width="222dp"
+        android:layout_height="94dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="86dp"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="numberPassword"
+        android:textColor="#DCFFFFFF"
+        android:textColorHint="#D8FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/btnLogin"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etEmailLogIn" />
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="151dp"
+        android:layout_height="74dp"
+        android:layout_marginBottom="229dp"
+        android:backgroundTint="#CAAFAF"
+        android:hint="Log In"
+        android:text="Log In"
+        android:textColorHint="#E8FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/etPassLogIn"
+        app:layout_constraintTop_toBottomOf="@+id/etPassLogIn" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
